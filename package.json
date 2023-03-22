@@ -1,7 +1,7 @@
 {
-  "name": "server-side-rendering",
+  "name": "the-web-is-for-everyone-interactive-functionality",
   "version": "1.0.0",
-  "description": "Ontwerp en ontwikkel een server-side website voor een opdrachtgever.",
+  "description": "> _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)",
   "main": "index.js",
   "type": "module",
   "directories": {
@@ -11,20 +11,18 @@
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "node",
-    "express",
-    "ejs"
-  ],
-  "author": "anouk bruin <anouk.bruin@hva.nl>",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/fdnd-task/server-side-rendering/issues"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoukbruinn/the-web-is-for-everyone-interactive-functionality.git"
   },
-  "homepage": "https://github.com/fdnd-task/server-side-rendering#readme",
+  "author": "Anouk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anoukbruinn/the-web-is-for-everyone-interactive-functionality/issues"
+  },
+  "homepage": "https://github.com/anoukbruinn/the-web-is-for-everyone-interactive-functionality#readme",
   "dependencies": {
-    "dotenv": "^16.0.3",
-    "ejs": "^3.1.8",
+    "ejs": "^3.1.9",
     "express": "^4.18.2"
   }
 }

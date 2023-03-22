@@ -1,0 +1,68 @@
+<%- include('./partials/head') %>
+
+  <header>
+    <a href="index.html"><img class="header-logo" src="assets/buurtcampus-oost-logo.svg" alt="" width="300x"> </a>
+
+
+    <ul>
+      <li><a href="/index">HOME</a></li>
+      <li><a href="/reserveren">RESERVEREN</a></li>
+      <li><a href="/agenda">AGENDA</a></li>
+      <li><a href="/informatie">INFORMATIE</a></li>
+      <li><a href="/contact">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <hr>
+
+
+  <main>
+    <div class="titel">
+      <img src="assets/PlantSwap-logo.png" width="25%"> 
+    </div>
+
+  <section class="intro"> 
+
+    <div class="stekje-intro"> 
+      <img class="stekje-intro-img" src="assets/stekje-intro.jpeg" width="65%"> </div>
+
+
+   <div class="intro-tekst"> 
+    <h2>Plantjes wisselen? Dat kan binnenkort bij ons!</h2>
+    <p> Zijn er stekjes die jij wilt wisselen? Dat kan bij ons! Meld je hieronder aan om vervolgens een stekje te <br> reserveren. Als u al een account heeft dan kunt u deze stap overslaan.</p>
+    <button> Aanmelden</button>
+   </div>
+
+  </section>
+
+  <section class="stekjes-container-intro">
+    <h1>Onze stekjes</h1>
+    <p class="stekjes-paragraph"> Hieronder zijn een aantal van onze stekjes te zien die er nu zijn. Door op de button te klikken kunt u meer informatie zien.</p>
+</section>
+
+<div class="stekjes-container1">
+
+  <% stekjes.forEach(stekje => { %>
+  <div class="stekjes">
+      <h2><%= stekje.naam %></h2>
+      
+      <img src="<%= stekje.fotos[0].original %>"> 
+  
+      <button> Meer informatie</button>
+  </div>
+  <% }) %>
+
+
+</div>
+
+
+
+
+
+  </section>
+ 
+  </main>
+
+  <%- include('./partials/foot') %>
+
+  
