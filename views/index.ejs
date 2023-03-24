@@ -46,9 +46,18 @@
   <div class="stekjes">
       <h2><%= stekje.naam %></h2>
       
-      <img src="<%= stekje.fotos[0].original %>"> 
-  
-      <button> Meer informatie</button>
+      
+      <% if (stekje.fotos[0]) { %>
+         <img src="<%=stekje.fotos[0].original %>" width="<%=stekje.fotos[0].width%>"
+        
+         height="<%= stekje.fotos[0].heigth %>" alt="stekje <%= stekje.naam %>">
+         <% }else{ %>
+        
+   <!-- anders een placeholder -->
+        <img src=".assets/stekje-intro.jpeg.jpg">
+           <% } %>
+      
+           <button> Meer informatie</button>
   </div>
   <% }) %>
 

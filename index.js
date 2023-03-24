@@ -1,7 +1,7 @@
 // Importeer express uit de node_modules map
 import express, { response } from 'express'
 
-const url = 'https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes?first=1000'
+const url = 'https://api.buurtcampus-oost.fdnd.nl/api/v1/stekjes'
 const data = await fetch(url).then((response) => response.json())
 
 
@@ -45,3 +45,9 @@ app.listen(app.get('port'), function () {
   // Toon een bericht in de console en geef het poortnummer door
   console.log(`Application started on http://localhost:${app.get('port')}`)
 })
+
+async function fetchJson(url, payload = {}) {
+    return await fetch(url, payload)
+    .then((response) => response.json())
+    .catch((error) => error);  
+}
