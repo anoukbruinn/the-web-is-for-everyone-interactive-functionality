@@ -130,6 +130,10 @@ font{
     
 }
 
+.titel-h1 {
+    color: #000000;
+}
+
 hr { 
     margin: 0;
     border-top: 6px dotted #F26F21;

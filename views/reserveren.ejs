@@ -16,35 +16,32 @@
 <hr>
 
 <main>
-<div class="around">
 
-  <h3> U moet eerst inloggen om te reserveren.</h3>
- 
-  <div class="center">
-<h1> Inloggen</h1>
-<form method="post"> </form>
+  <h1 class="titel-h1">Onze stekjes</h1>
 
-<div class="txt_field">
-<input type="text" required>
-<span></span>
-<label> Gebruikersnaam</label>
-</div>
+  <div class="stekjes-container1">
 
-<div class="txt_field">
-<input type="password" required>
-<label> Wachtwoord</label>
-</div>
-
-<div class="pass"> Wachtwoord vergeten?</div>
-
-<input type="submit" value="Login">
-
-<div class="Signup_link">
-<a href="#"> Wordt lid </a>
-</div>
-
-</div>
-</div>
+    <% stekjes.forEach(stekje => { %>
+    <div class="stekjes">
+        <h2><%= stekje.naam %></h2>
+        
+        
+        <% if (stekje.fotos[0]) { %>
+           <img src="<%=stekje.fotos[0].original %>" width="<%=stekje.fotos[0].width%>"
+          
+           height="<%= stekje.fotos[0].heigth %>" alt="stekje <%= stekje.naam %>">
+           <% }else{ %>
+          
+     <!-- anders een placeholder -->
+     <img class="stekje-intro-img" src="assets/stekje-intro.jpeg">
+             <% } %>
+        
+             <button> Meer informatie</button>
+    </div>
+    <% }) %>
+  
+  
+  </div>
 </main> 
 
 <%- include('./partials/foot') %>
