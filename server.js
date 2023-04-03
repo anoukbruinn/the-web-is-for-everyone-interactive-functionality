@@ -37,6 +37,9 @@ app.get('/agenda', (request, response) => {
 app.get('/index', (request, response) => {
     response.render('index', data)
   })
+  app.get('/toevoegen', (request, response) => {
+    response.render('toevoegen', data)
+  })
 // Stel het poortnummer in waar express op gaat luisteren
 app.set('port', process.env.PORT || 4000)
 
@@ -51,4 +54,6 @@ async function fetchJson(url, payload = {}) {
     .then((response) => response.json())
     .catch((error) => error);  
 }
+
+
 

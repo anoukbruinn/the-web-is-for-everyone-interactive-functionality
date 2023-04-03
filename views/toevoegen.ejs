@@ -1,0 +1,51 @@
+<%- include('./partials/head') %>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles/styles.css" type="text/css">
+  </head>
+  
+  <body>
+  
+    <header>
+      <a href="index.html"><img class="header-logo" src="assets/buurtcampus-oost-logo.svg" alt="" width="300x"> </a>
+  
+  
+      <ul>
+        <li><a href="/index">HOME</a></li>
+        <li><a href="/reserveren">RESERVEREN</a></li>
+        <li><a href="/agenda">AGENDA</a></li>
+        <li><a href="/informatie">INFORMATIE</a></li>
+        <li><a href="/contact">CONTACT</a></li>
+      </ul>
+    </header>
+  
+    <hr>
+  
+  
+<main>
+
+    <div class="stekje-toevoegen"> 
+        <form class="stekje-form">
+            <label for="text">Voeg uw stekje toe!</label>
+            <input type="text" placeholder="Naam van jouw stekje?" name="name" required>  
+            <input type="text" placeholder="Wat is de voeding van jouw stekje?" name="voeding" required>  
+            <input type="text" placeholder="Uw stekje" name="Hoevaak moet het worden verpot?" required>  
+            <fieldset>
+                <input type="file" name="picture" id="picture" />
+            </fieldset>
+            
+
+            <button id="add-button" type= "submit" value="default">Toevoegen</button>
+        </form>
+    </div>
+
+
+
+</main>
+
+<%- include('./partials/foot') %>
