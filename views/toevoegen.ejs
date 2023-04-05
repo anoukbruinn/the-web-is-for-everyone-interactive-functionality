@@ -30,15 +30,21 @@
 <main>
 
     <div class="stekje-toevoegen"> 
-        <form class="stekje-form">
-            <label for="text">Voeg uw stekje toe!</label>
-            <input type="text" placeholder="Naam van jouw stekje?" name="name" required>  
-            <input type="text" placeholder="Wat is de voeding van jouw stekje?" name="voeding" required>  
-            <input type="text" placeholder="Uw stekje" name="Hoevaak moet het worden verpot?" required>  
-            <fieldset>
-                <input type="file" name="picture" id="picture" />
-            </fieldset>
+        <form method="post" action="/toegevoegd"class="stekje-form">
+            <label for="naam">Voeg uw stekje toe!</label>
+            <input type="text" placeholder="Naam van jouw stekje?" name="naam" required> 
             
+            <label for="voeding">Voeding</label>
+              <input type="text" placeholder="Wat is de voeding van jouw stekje?" name="voeding" required> 
+
+            <label for="verpotten">verpotten</label> 
+              <input type="text" placeholder="Verpotten?" name="verpotten" required>
+
+            <label for="giftig">giftig</label> 
+              <input type="text" placeholder="Is het giftig?" name="giftig" required>
+
+            <label for="fotos">Foto's</label>
+              <input type="text" placeholder="Foto's" name="fotos" required>
 
             <button id="add-button" type= "submit" value="default">Toevoegen</button>
         </form>

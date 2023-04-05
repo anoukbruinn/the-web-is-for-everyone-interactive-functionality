@@ -15,16 +15,32 @@ app.set('views', './views')
 // Gebruik de map 'public' voor statische resources
 app.use(express.static('public'))
 
+// Stel afhandeling van formulieren in (BEKIJK DEZE CODE NOG)
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
 // Maak een route voor de index
 app.get('/', function (request, response) {
   // res.send('Hello World!')
   response.render('index', data);
-  console.log(data)
+  // console.log(data)
 })
 
 app.get('/reserveren', (request, response) => {
     response.render('reserveren', data)
   })
+app.post("/toegevoegd",(request, response) => {
+ 
+postJson(url, request.body).then ((data) => {
+
+  if (data.success) (
+    response.redirect ('/reserveren')
+  )
+
+  else {console.log('Oeps iets gaat mis!')}
+  })
+
+})
 app.get('/contact', (request, response) => {
     response.render('contact', data)
   })
@@ -55,5 +71,26 @@ async function fetchJson(url, payload = {}) {
     .catch((error) => error);  
 }
 
+// POST FUNCTION (BEKIJK DEZE CODE NOG)
+
+/**
+ * postJson() is a wrapper for the experimental node fetch api. It fetches the url
+ * passed as a parameter using the POST method and the value from the body paramater
+ * as a payload. It returns the response body parsed through json.
+ * @param {*} url the api endpoint to address
+ * @param {*} body the payload to send along
+ * @returns the json response from the api endpoint
+ */
+ export async function postJson(url, body) {
+  return await fetch(url, {
+      method: 'post',
+      body: JSON.stringify(body),
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    })
+    .then((response) => response.json())
+    .catch((error) => error)
+}
 
 
