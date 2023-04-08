@@ -20,6 +20,8 @@
 
 In dit project heb ik een userstory uitgekozen. Aan de hand van deze userstory ga ik de rest van de opdrachten uitvoeren. Bijvoorbeeld een POST maken. Ook een progressive enhancement De userstory die ik heb uitgekozen is: Als buurtbewoner wil ik een stekje kunnen toevoegen met een formulier.
 
+<img width="1680" alt="Scherm­afbeelding 2023-04-08 om 12 31 01" src="https://user-images.githubusercontent.com/112856687/230716532-00c11ad0-9318-42d9-8746-7cda3dbfceaf.png">
+
 
 ## Gebruik
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
