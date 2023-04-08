@@ -53,7 +53,7 @@ Verder heb ik dit project gewerkt met progressive enhancement. Dit heb ik op dez
 
 * Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen (Presentation layer).
 
-* Hierna komt nog de 3e laag, maar daar ben ik nog niet aan toe gekomen. Dit is de client side. 
+* Hierna komt nog de 3e laag, maar daar ben ik nog niet aan toe gekomen. Dit is de client side scripting. 
 
 ## Bronnen
 
