@@ -45,6 +45,14 @@ Ook ga ik werken met progressive enhancement heb ik gewerkt met progressive enha
 
 De installatie van dit proces ben ik gestart met Npm init, vervolgens npm install express ejs waarna ik alleen nog npm start in hoefde te typen. Daardoor kreeg ik allerlei bestanden van node en node.
 
+Verder heb ik dit project gewerkt met progressive enhancement. Dit heb ik op deze manier gedaan. 
+
+* Eerst bouw je de core functionality van je website in HTML en met behulp van NodeJS, met als voorbeeld voor het server-side afhandelen van het posten van data. (Content layer). Dit wilt zeggen dat je website al complete moet werken binnen deze fase.
+
+* Daarna voeg je CSS toe voor feedback voor de gebruiker en om de huisstijl toe te passen (Presentation layer).
+
+* Hierna komt nog de 3e laag, maar daar ben ik nog niet aan toe gekomen. Dit is de client side. 
+
 ## Bronnen
 
 ## Licentie
