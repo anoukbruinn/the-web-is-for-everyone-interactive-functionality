@@ -18,7 +18,8 @@
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
-In dit project heb ik een userstory uitgekozen. Aan de hand van deze userstory ga ik de rest van de opdrachten uitvoeren. Bijvoorbeeld een POST maken. Ook een progressive enhancement 
+In dit project heb ik een userstory uitgekozen. Aan de hand van deze userstory ga ik de rest van de opdrachten uitvoeren. Bijvoorbeeld een POST maken. Ook een progressive enhancement De userstory die ik heb uitgekozen is: Als buurtbewoner wil ik een stekje kunnen toevoegen met een formulier.
+
 
 ## Gebruik
 <!--Bij Gebruik staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
